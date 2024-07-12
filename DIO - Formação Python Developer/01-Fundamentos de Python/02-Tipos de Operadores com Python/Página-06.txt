@@ -1,0 +1,13 @@
+************** Operadores de associação **********
+Os operadores de associação são usados para verificar se um objeto está presente 
+em uma sequência.
+
+curso = "Curso de Python"
+frutas ["laranja", "uva", "limão"]
+saques = [1500, 100]
+
+"Python" in curso --> True
+
+"maça" not in frutas --> True
+
+200 in saques --> False

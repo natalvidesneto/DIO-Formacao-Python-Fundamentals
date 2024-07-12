@@ -1,0 +1,78 @@
+************** Estruturas condicionais  **********
+As estruturas condicionais permite o desvio de fluxo de dados,
+quando determinadas expressões lógicas são atendidas.
+
+IF
+A estrutua condicional simples é composta por um
+único desvio, usamos a palavra reserva if. O comando testa a expressão lógica,
+e em caso de retorno executa o bloco de código if.
+
+Exemplo:
+saldo = 2000.0
+saque = float(input("Informe o valor do daque:"))
+
+if saldo >= saque:
+    print("Realizando saque!)
+
+if saldo <= saque:
+    print("Saldo insuficiente!)
+
+IF/ELSE
+Para criar uma estrutura com dois desviso,
+usamos as palavras reservadas "if" e "else". Se a 
+expressão lógica testada no "if" for verdadeiro, o cloco
+do "if" será executado. Caso contrário o bloco do "else" será
+executado.
+
+Exemplo:
+saldo = 2000.0
+saque = float(input("Informe o valor do saque:"))
+
+if saldo >= saque:
+    print("Realizando saque!")
+else:
+    print("Saldo insuficiente!")
+
+IF/ELIF/ELSE
+Quando queremos mais de dois desvios, usamos a plavra reservada "elif".
+O "elif" é composto por uma nova expressão lóggica, que será testada e caso
+retorne verdadeiro o bloco do "elif" será executado. Não existe um número máximo
+de "elif" que podemos utlizar, porém evite criar grandes estruturas condicionais,
+pois elas aumentam a complexidade do código.
+
+Exemplo:
+opcao = int(input("Informe uma opção: [1] Sacar \n[2] Extrato:"))
+if opcao == 1:
+    valor = float(input("Informe a quantia para o saque"))
+elif opcao == 2:
+    print("Exibindo o extrato...")
+else:
+    sys.exit("Opção inválida")
+
+*********** IF aninhado *************
+Podemos criar estrutuas condicionais, para isso
+basta adicionar estruturas "IF/ELIF/ELSE" dentro do 
+bloco de código de estruturas ""IF/ELIF/ELSE".
+
+Exemplo:
+if conta_normal:
+    if saldo >= saque:
+        print("Saque realizado com sucesso!")
+    else saque <= (saldo + cheque_especial):
+        print("Saque realizado com uso do cheque especial!")
+elif conta_universitaria:
+    if saldo >= saque:
+        print("Saque realizado com sucesso!")
+    else:
+        print("Saldo insuficiente!")
+
+************ IF ternário ************
+O "IF" ternário permite escrever uma condição em uma única linha.
+Ela é composta por três parte, a primeira retorna a expressão 
+verdadeira, a segunda é a expressão lógica e a terceira retorna caso a
+expressão não seja atendida.
+
+Exemplo:
+
+status = "Sucesso" if saldo >= saque esle "Falha"
+print(f"{status} ao realizar o saque!")

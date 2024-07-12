@@ -1,0 +1,36 @@
+***** Conversão de tipos *******
+Em algum momento é necessário converter um tipo de variável
+para manipular de forma diferente.
+
+***** Inteiro para float *****
+valor = 10
+valor = float(valor)
+
+Outra froma de fazer essa conversão é usando o sinal de divisão.
+valor = 10
+print(valor / 2)
+
+
+***** float para inteiro ******
+Usando a divisão exata (duas barras //) convertermos float para int.
+valor = 10.0
+print(valor // 2)
+
+valor = 10.0
+valor = int(valor)
+
+****** Númerico para String ******
+valor = 10
+valor = str(valor)
+
+Dessa forma podemos concatenar string com variável númerica.
+texto = f"O valor é {valor}"
+
+***** String para númerico ******
+valor = "10"
+valor = float(valor)
+valor = int(valor)
+
+Lembrando que não podemos converter "texto" para número.
+ex: texto = "Valor"
+    print(float(texto)) --> Erro

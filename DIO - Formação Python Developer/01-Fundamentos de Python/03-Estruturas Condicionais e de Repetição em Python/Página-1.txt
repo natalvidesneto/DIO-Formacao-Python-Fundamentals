@@ -1,0 +1,45 @@
+********* Indetação e blocos *******
+Indetação é uma forma de manter o código fonte mais legível.
+Mas em Python ela exerce uma segundo papel, atráves da indentação
+o interpretador consegue determinar onde um bloco de código inicar
+e onde termina.
+
+As linguagens de programação costuman utilizar caracteres ou 
+palavras reservadas para terminar o início e fim do bloco. Em
+Java e C por exemplo, utilizamos chaves.
+
+Exemplo em Java:
+    void sacar(double valor){ //início do bloco do método
+        if(this.saldo >= valor){// início do bloco do if
+            this.saldo -= valor;
+        } // fim do bloco do if
+    } // fim do bloco do método
+
+Sem indentação ou espaço dica difícil de lê:
+exemplo:
+    void sacar(double valor){ //início do bloco do método
+    if(this.saldo >= valor){// início do bloco do if
+    this.saldo -= valor;
+    } // fim do bloco do if
+    } // fim do bloco do método
+
+Agora em Python
+obs: O Python tem um caractere para iníciar método, que é dois pontos (:)
+
+def sacar(self, valor: float) --> None: # Início do bloco do método
+    if self.saldo >= valor: # início do bloco do if
+        self.saldo -= valor
+    # fim do bloco do if
+# fim do bloco do método
+
+Agora o Python sem indentação o código não função, como em outras linguagens
+
+def sacar(self, valor: float) --> None: # Início do bloco do método
+if self.saldo >= valor: # início do bloco do if
+self.saldo -= valor
+# fim do bloco do if
+# fim do bloco do método
+
+
+Obs: Usamos dois pontos (:) para definir o tipo de valor, mais isso é opcional.
+Exemplo: def sacar(valor: float)

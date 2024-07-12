@@ -1,0 +1,13 @@
+*********** Operadores de identidade **********
+Os operadores de identidade são udados para comprar se os dois objetos testados
+ocupam a mesma posição na memória (ou possuem o mesmo valor).
+
+curso = "Curso Python"
+nome_curso = curso
+saldo, limite = 200, 200
+
+curso is nome_curso --> True
+
+curso is not nome_curso --> False
+
+saldo is limite --> True

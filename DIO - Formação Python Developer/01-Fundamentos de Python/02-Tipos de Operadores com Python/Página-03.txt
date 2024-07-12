@@ -1,0 +1,20 @@
+********** Operadores de atribuição ******
+Os Operadores de atribuição são usados para definir um valor incial ou 
+sobrescrever o valor de uma variável.
+
+Atribuição simples (=)
+
+Atribuição com adição (+=)
+
+Atribuição com subtração (-=)
+
+Atribuição com multiplicação (*=)
+
+Atribuição com divisão (//=)
+
+Atribuição com divisão inteira (//=) --> retorna apenas um valor inteiro se variável incial 
+fosse um inteiro e não um float(se fosse float retornaria valor float)
+
+Atribuição com módulo (%=)
+
+Atribuição com exponenciação (**=)

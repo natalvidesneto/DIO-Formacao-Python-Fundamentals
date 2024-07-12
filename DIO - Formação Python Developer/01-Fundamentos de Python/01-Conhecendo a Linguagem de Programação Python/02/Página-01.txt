@@ -1,0 +1,15 @@
+******** Tipos de Dados **************
+Texto --> str
+Númerico --> int, float, complex
+Sequência --> list, tuple, range
+Mapa --> dict
+Coleção --> set, fronzenset
+Booleano --> bool
+Binário --> bytes, bytearray, memoryview
+
+Exemplo de Código:
+name = "Neto"
+age = 27
+year = 1997
+
+print(f"Olá me chamo {name} e tenho {age} anos de idade e nasci em {year}.....")

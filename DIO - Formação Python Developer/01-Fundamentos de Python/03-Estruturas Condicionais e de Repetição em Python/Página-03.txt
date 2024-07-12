@@ -1,0 +1,127 @@
+********** Estruturas de Repetição ****************
+São estrutuas utilizadas para repetir um trecho de código um
+determinado número de vezes. Esse número pode ser
+conhecido previamente ou determinado atráves de uma
+expressão lógica.
+
+***** Comando FOR *******
+O comando "for" é usado para percorrer um objeto iterável. Faz
+sentido usar "for" quando sabemos o número exato de vezes que
+nosso bloco de código deve ser executado, ou quando
+queremos percorrer um objeto iterável.
+
+Exemplo:
+Esse código percorrer o texto buscando "A,E,I,O,U"
+
+texto = input("Informe um texto:")
+VOGAIS = "AEIOU"
+
+for letra in texto:
+    if letra.upper() in VOGAIS:
+        print(letra, end="")
+
+print() #adiciona um quebra de linha
+
+O "for" em Python tem outra instrução o "else". Que executa
+no final.
+
+texto = input("Informe um texto:")
+VOGAIS = "AEIOU"
+
+for letra in texto:
+    if letra.upper() in VOGAIS:
+        print(letra, end="")
+else:
+    print() #adiciona um quebra de linha
+
+******* Função range ********
+Range é uma função do Python, ela é usada para
+produzir uma sequência de números inteiros a partir de um
+início para um fim. Se usarmos "ranger(i,j)"
+será produzido:
+i, i+1, i+2, i+3, ..., j-1
+
+Ela recebe 3 argumentos: stop(obrigatório), start(opcional) e
+step(opcional).
+
+Exemplo:
+# range(stop) --> range object
+# range(start, stop[,step]) -> range object
+
+list(range(4))
+>>>[0,1,2,3]
+
+Exemplo:
+for numero in range(0,11):
+    print(numero, end="")
+
+# exibindo a tabuada de 5
+for numero in range(0,51, 5):
+    print(numero, end="")
+
+Exemplo:
+
+texto = "Natalvides"
+for letra in texto:
+    print(f"Letra: {letra}")
+else:
+    print(">>>>>>>>>>>>>>>>>>>>>>>")
+numero = 27
+for valor in range(0,numero):
+    print(f"contando: {valor}")
+else:
+    print(">>>>>>>>>>>>>>>>>>>>>>>")
+
+********* Comando While *********
+O camando While é usado para repetir um bloco de código
+várias vezes. Faz sentido usar While quando não sabemos o
+número exato de vezes que nosso bloco de código deve ser
+executado.
+
+Exemplo:
+
+opcao = -1
+
+While opcao != 0:
+    opcao = int(input("[1] Sacar \n[2] Exato\n[0] Sair\n))
+
+    if opcao == 1:
+        print("Sacando...")
+    elif opcao == 2:
+        print("Exibindo o extrato...")
+
+Igual o "for" temos também o "else".
+
+Exemplo:
+
+opcao = -1
+
+While opcao != 0:
+    opcao = int(input("[1] Sacar \n[2] Exato\n[0] Sair\n))
+
+    if opcao == 1:
+        print("Sacando...")
+    elif opcao == 2:
+        print("Exibindo o extrato...")
+else:
+print("Obrigado pro usar nosso sistema bancário, até logo!")
+
+**** Break ***
+O "break" parar ou corta a estrutra de repetição se numero for igual a 10.
+
+Exemplo:
+
+While True:
+    numero = int(input("Informe um número!"))
+    if numero == 10:
+        break
+    print(numero)
+
+***** Continue *****
+O "continue" pula ou continua a execução do código quando uma condição é atendida.
+
+Exemplo:
+for numero in range(100):
+    if numero % 2 == 0:
+        continue
+    print(numero, end=" ")

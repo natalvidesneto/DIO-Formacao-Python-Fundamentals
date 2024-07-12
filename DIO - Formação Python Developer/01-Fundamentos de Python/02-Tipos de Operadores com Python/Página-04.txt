@@ -1,0 +1,41 @@
+********* Operadores lógicos **********
+Os operadores lógicos são uma conjunto de operadores de comparação,
+para montar uma expressão lógica. Quando um operador de comparação é utilizando,
+o resultado é um booleano, dessa forma podemos combinar operadores de comparação com os operadores
+lógicos.
+
+Operador Lógicos E
+Retorna verdadeiro se os dois valores forem verdadeiros.
+
+saldo = 1000
+saque = 200
+limite = 100
+
+saldo >= saque and saque <= limite
+
+Operador OU
+Retorna verdadeiro se um dos valores for verdadeiro
+saldo >= saque or saque <= limite
+
+Operador de Negação
+Investe o valor, se for verdadeiro retorna falso, se for faldo retorna verdadeiro
+
+not 1000 > 1500 --> retorna True
+
+contatos_emergencia = []
+not contatos_emergencia --> resultado True
+
+not "saque 1500" --> retorna False
+
+not "" --> True
+
+
+Lembrando que os parênteses servem para delimentar a presendência.
+saldo = 1000
+saque = 250
+limite = 200
+consta_especial = Tue
+
+saldo >= saque and saque <= limite or contatos_emergencia and saldo >= saque
+
+(saldo >= saque and saque <= limite) or (contatos_emergencia and saldo >= saque) --> com os parênteses verifica o que será executado primerio

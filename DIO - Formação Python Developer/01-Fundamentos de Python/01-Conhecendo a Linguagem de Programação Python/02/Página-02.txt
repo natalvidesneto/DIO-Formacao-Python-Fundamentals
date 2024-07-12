@@ -1,0 +1,25 @@
+**************** Variáveis e Constantes **********
+Declarando Variáveis:
+age = 23
+name = "Usuário"
+
+Também podemos declarar várias variáveis em uma linha e atribuir valor:
+age, name = (27, 'Usuário')
+
+
+Para altera o valor basta fazer uma nova atribuição:
+age = 27 --> age = 30
+
+
+******** Constantes *****
+É um variável cujo valor não pode ser alterado:
+Em Python não atribuimos um tipo do dado antes de declara a variável ou constante,
+sendo assim,temos que escrever a constante em maísculo para saber que é uma constante.
+ex: PI = 3.1415
+     CPF = "00.000.00.000-00"
+
+
+***** Boas prática em Python *****
+- Escrever nome em snake case
+- Escolher nomes sugestivos
+- Nome de constante todo em maúsculo

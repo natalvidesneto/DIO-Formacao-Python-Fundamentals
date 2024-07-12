@@ -1,0 +1,15 @@
+********* Operadores aritméticos *********
+Os operadores aritméticos são usados em expressões aritméticas.
+Operadores: soma (+); subtração (-), multiplicação (*); divisão (/); divisão exata(//)
+
+Temos também o Módulo e exponenciação
+móudlo (%); exponeciação (**)
+
+Na matemática existe uma regra que indica quais operações
+devem ser executada primeiro. Isso é útil pois ao analisar uma
+expressão, a depender da ordem das operações o valor pode ser diferente.
+Orderm da presedência:
+- Parêntesis
+- Expoêntes
+- Multiplicação e Divisão (da esquerda para a direita)
+- Somas e Subtração (da esquerda para a direita)

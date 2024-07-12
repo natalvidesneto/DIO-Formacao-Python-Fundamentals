@@ -1,0 +1,4 @@
+*********** Operadores de comparação **********
+Operadores de comparação são usados para comparar dois valores.
+
+igual(==); diferente (!=); maior(>); maior igual(>=); menor(<); menor igual(<=)

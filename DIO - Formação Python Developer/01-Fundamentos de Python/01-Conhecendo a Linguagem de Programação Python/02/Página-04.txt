@@ -1,0 +1,11 @@
+*************** Funções de entrada e saída *************
+A função input: é utilizada para ler dados de entrada do teclado.
+Ela recebe um argumento do tipo string, e exibe para o usuário na saída da tela. A 
+função lê a entrada, converte para string e retorna o valor.
+
+input()
+
+A função print: é utilizada quando queremos exibir dados na sáida padrão (tela).
+Ela recebe um argumento obrigatório do tipo varargs de objetos, e 4 argumetnos opcionais (sep, end, file e flush).
+Todos os objetos são convertidos para string, separados por "sep" e terminados por "end". A string final é 
+exibida para o usuário.
