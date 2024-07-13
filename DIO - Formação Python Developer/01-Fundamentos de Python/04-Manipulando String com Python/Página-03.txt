@@ -1,0 +1,35 @@
+********** Fatiamento de string *************
+Fatiamento de strinfs é uma técnica utilizada para retornar
+substrings (partes da string original), informando inicio (start),
+fim (stop) e passo (step): [start:stop[,step]].
+
+Exemplo:
+
+nome = "Guilherme Arthur de Carvalho"
+
+nome[0]
+>>> "G"
+
+# O 9 não inclui retorna até o 8
+nome[:9]
+>>> "Guilherme"
+
+# Pega a partir de 10 até o final da string 
+nome[10:]
+>>> "Arthur de Carvalho"
+
+# Passando início e fim
+nome[10:16]
+>>> "Arthur"
+
+# start stop e step
+nome[10:16:2]
+>>> "Atu"
+
+# Retorna a string inteira
+nome[:]
+>>> "Guilherme Arthur de Carvalho"
+
+# retorna a string investida
+nome[:: -1]
+>>> "ohlavraC ed ruhtrA enrejliuG"

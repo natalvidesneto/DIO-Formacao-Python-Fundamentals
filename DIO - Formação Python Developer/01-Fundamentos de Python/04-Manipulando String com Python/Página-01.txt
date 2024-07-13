@@ -2,7 +2,7 @@
 
 A Classe String do Python é famosa por ser rica em métodos e
 possuir uma interface muito fácil de trabalhar.
-Em algumas linguagens de manipular sequnências de caracteres
+Em algumas linguagens de manipular sequências de caracteres
 não é um trabalho trivial, porém, em Python esse trabalho é
 muito simples.
 
@@ -21,7 +21,7 @@ Exemplo eliminando espaços em branco
 
 curso = "  Python "
 
-print(curso.strinp()) # remover espaço de ambos os lados
+print(curso.strip()) # remover espaço de ambos os lados
 
 print(curso.lstrip()) # remover espaço da esquerda
 

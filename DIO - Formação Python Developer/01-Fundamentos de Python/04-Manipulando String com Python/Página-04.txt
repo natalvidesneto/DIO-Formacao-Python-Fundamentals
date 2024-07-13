@@ -1,0 +1,48 @@
+******** String múltiplas linhas ********
+Strings de múltiplas linhas são definidas informando 3 aspas
+simples ou duplas durante a atribuição. Elas podem ocupar
+várias linhas do código, e todos os espaços em branco são
+incluídas na string final.
+
+Exemplo String triplas
+
+nome = "Guilherme"
+
+mensagem = f"""
+Olá meu nome é {nome},
+Eu estou aprendendo Python
+"""
+>>>
+Olá meu nome é Guilherme,
+Eu estou aprendendo Python
+
+# Aspas simples ou duplas é o mesmo 
+
+nome = "Guilherme"
+
+mensagem = f'''
+    Olá meu nome é {nome},
+  Eu estou aprendendo Python
+        Essa mensagem tem diferente recuos.
+'''
+# Os espaços são preservados
+>>>
+    Olá meu nome é Guilherme,
+  Eu estou aprendendo Python
+        Essa mensagem tem diferente recuos.
+
+Exemplo com menu
+# Todo o recuo é preservado
+print(
+    """
+    ================= Menu ===============
+
+    1 - Depositar
+    2 - Sacar
+    3 - Sair
+
+    ======================================
+    
+            Obrigado por usar nosso sistema!!!!
+    """
+)

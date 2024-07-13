@@ -1,0 +1,48 @@
+*************** Interpolação de variáveis************
+Em Python temos 3 fromas de interpolar variáveis em strings, a
+primeira é usando o sinal "%", a segunda é utlizando o método
+"format" e a útima é útilizando "f strings".
+
+Hoje é recomendado o uso de "f strings".
+
+**** Uso de % ****
+
+nome = "Guilherme"
+idade = 28
+profissao = "Progrmador"
+linguagem = "Python"
+
+print("Olá, me chamo %s. Eu tenho %d anos de idade, trabalho como %s e estou matriculado no curso de %s." % (nome, idade, profissao, linguagem))
+
+**** Método format *****
+
+nome = "Guilherme"
+idade = 28
+profissao = "Progrmador"
+linguagem = "Python"
+
+print("Olá, me chamo {}.Eu tenho {} anos de idade, trabalho como {} e estou matriculado no curso {}." .format(nome, idade, profissao, linguagem))
+
+# Entre chaves colocamos qual a valor da posição do valor
+print("Olá, me chamo {3}.Eu tenho {2} anos de idade, trabalho como {1} e estou matriculado no curso {0}." .format(linguagem, profissao, idade, nome))
+
+# Passamos o argumento de forma nomeada
+print("Olá, me chamo {nome}.Eu tenh {idade} anos de idade, trabalho como {profissao} e estou matriculado no curso de {linguagem}." .format(nome=nome, idade=idade, profissao=profissao, linguagem=linguagem))
+
+# Usando dicionário
+# Exemplo de dicionário --> dados = ("nome": "Guilherme", "idade": 28)
+print("Olá, me chamo {nome}.Eu tenh {idade} anos de idade, trabalho como {profissao} e estou matriculado no curso de {linguagem}." .format(**pessoa))
+
+**** f-string ****
+print(f"Olá, me chamo {nome}.Eu tenh {idade} anos de idade, trabalho como {profissao} e estou matriculado no curso de {linguagem}.")
+
+# Formatando strings com f-string
+PI = 3.14159
+# Passando número de caracteres
+print(f"Valor de PI : {PI:.2f}")
+>>> Valor de PI: 3.14
+
+# adicionando 10 espaço
+print(f"Valor de PI: {PI:10.2f}")
+>>> Valor de PI:          3.14
+

@@ -20,7 +20,7 @@ if saldo <= saque:
 IF/ELSE
 Para criar uma estrutura com dois desviso,
 usamos as palavras reservadas "if" e "else". Se a 
-expressão lógica testada no "if" for verdadeiro, o cloco
+expressão lógica testada no "if" for verdadeiro, o bloco
 do "if" será executado. Caso contrário o bloco do "else" será
 executado.
 
@@ -35,7 +35,7 @@ else:
 
 IF/ELIF/ELSE
 Quando queremos mais de dois desvios, usamos a plavra reservada "elif".
-O "elif" é composto por uma nova expressão lóggica, que será testada e caso
+O "elif" é composto por uma nova expressão lógica, que será testada e caso
 retorne verdadeiro o bloco do "elif" será executado. Não existe um número máximo
 de "elif" que podemos utlizar, porém evite criar grandes estruturas condicionais,
 pois elas aumentam a complexidade do código.
@@ -74,5 +74,5 @@ expressão não seja atendida.
 
 Exemplo:
 
-status = "Sucesso" if saldo >= saque esle "Falha"
+status = "Sucesso" if saldo >= saque else "Falha"
 print(f"{status} ao realizar o saque!")
