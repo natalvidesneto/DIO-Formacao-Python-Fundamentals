@@ -1,0 +1,70 @@
+******** Listas: Criação e acesso aos dados ******
+
+    Lista em Python podem armazenar de maneira sequencial
+qualquer tipo de objeto. Podemos criar listas utilizando objeto o
+construtor "list", a função range ou colocando valores separados
+por vírgula dentro de colchetes. Listas são objetos mutáveis,
+portanto podemos alterar seus valores após a criação.
+
+Exemplos:
+
+frutas = ["laranja", "maça", "uva"]
+
+frutas = []
+
+# O objeto "list" não coloca a palavra python e sim cada letra.
+letras = list("python")
+
+# Vai gerar um valor de 0 até 9
+numeros = list(range(10))
+
+carro = ["Ferrari", "F8", 4200000, 2020, "São Paulo", True]
+
+**** Acesso direto ****
+    A lista é uma sequência, portanto podemos acesar seus dados
+utilizando índices. Contamos o índice de determinada 
+sequência a partir do zero.
+
+Exemplos:
+
+frutas = ["maça", "laranja", "uva", "pera"]
+frutas[0]
+>>> maça
+frutas[2]
+>>> uva
+
+**** Índices negativos ****
+    Sequências suportam indexação negativa. A contagem começa
+em -1.
+
+Exemplos:
+frutas = ["maça", "laranja", "uva", "pera"]
+frutas[-1]
+>>> pera
+frutas[-3]
+>>> laranja
+
+**** Lista aninhadas *****
+    Lista podem armazenar todos os topos de objetos Python
+portanto podemos ter listas que armazenam outras lista. Com 
+isso podemos criar estruturas bidimensionais (tabelas), e 
+acessar informando os índices de linha e coluna.
+
+Exemplo:
+
+matriz = [
+    [1, "a", 2],
+    ["b", 3, 4],
+    [6, 5, "c"]
+]
+
+matriz[0]
+>>> [1, "a", 2]
+matriz[0][0]
+>>> 1
+matriz[0][-1]
+>>> 2
+matriz[-1][-1]
+>>> "c"
+
+**** Fatiamento ****
